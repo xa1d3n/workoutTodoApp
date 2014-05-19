@@ -1,0 +1,3 @@
+<section class="daySelection"><button ng-click="createNew()">Create New</button><div id="daysContainer"><p>Choose days:<div ng-repeat="day in days"><input type="checkbox" value="{{day.dayName}}" name="{{day.day}}" ng-model="day.selected">{{day.dayName}} <!--<ul ng-repeat="work in day.workouts">
+			<li>{{work.name}}</li>
+			</ul> --></div><input type="submit" value="Submit" class="button" ng-click="goToSetExcercises()"></p></div><button ng-click="predefinedRoutine()">Choose Predefined</button></section>
